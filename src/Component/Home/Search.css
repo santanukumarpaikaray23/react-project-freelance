@@ -1,0 +1,55 @@
+.imageContainer{
+    background: url('https://i.ibb.co/Cv6Y9NL/bg.jpg');
+    border-style: solid ;
+    border-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+body{
+    margin: auto;
+}
+#logo{
+    text-align:right;
+    color:rgb(11,168,196);
+    font-weight: bold;
+    font-size: 90px;
+    background: url('https://i.ibb.co/bdFJvzV/90296612-1389518447886568-7503208635187593216-n.jpg');
+    
+    height:150px;
+    width:150px;
+    margin:auto;
+    border-radius:100%;
+    margin-top: 80px;
+    margin-bottom: 90px;
+}
+
+.heading{
+    text-align:center;
+    color:rgb(250, 17, 17);
+    font-size:36px;
+
+}
+
+.locationSelector{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.locationDropDown{
+    width:250px;
+    height:60px;
+    border-radius: 0%;
+    font-size: 20px;
+    border: none;
+}
+
+.typesDropDown{
+    border: none;
+    width:370px;
+    height:60px;
+    border-radius:0%;
+    font-size: 20px;
+    margin-left:10px
+}
