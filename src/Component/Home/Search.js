@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './Search.css';
-const serviceUrl="http://localhost:3800/service";
+const serviceUrl="http://localhost:9800/services";
 
 class Search extends Component {
     constructor(){
