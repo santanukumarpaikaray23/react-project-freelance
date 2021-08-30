@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './Search.css';
 const serviceUrl="http://localhost:9800/services";
+const servicetypeUrl=""
 
 class Search extends Component {
     constructor(){
@@ -10,8 +11,21 @@ class Search extends Component {
             service:''
         }
     }
+    renderservices = (data)=>{
+        if(data){
+            return data.map((item)=>{
+                return(
+                    <option value={item._id}>
+                        {item.service_name}
+                    </option>
+                )
+            })
+        }
+
+        }
+  
     render(){
-        console.log(">>>in render")
+        console.log(">>>>>in render>>>>>",this.state.service)
         return(
             <div className="imageContainer">
                 <div id="logo"> 
@@ -27,6 +41,7 @@ class Search extends Component {
                 <div className="locationSelector">
                     <select className="locationDropDown">
                         <option>--SELECT SERVICES--</option>
+                        {this.renderservices(this.state.services)}
                     </select>
                     <select className="typesDropDown">
                         <option>--SELECT SERVICES TYPE--</option>
@@ -44,7 +59,12 @@ class Search extends Component {
         .then((res)=>res.json())
         //get the data
         .then((data)=>{
-            console.log(data)
+            //setting data in state
+            this.setState({services:data})
+        })
+        //error handling
+        .catch((err)=>{
+            console.log(err)
         })
 
 
