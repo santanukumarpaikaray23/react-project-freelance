@@ -31,13 +31,13 @@ body{
 
 }
 
-.locationSelector{
+.serviceSelector{
     margin-top: 20px;
     margin-bottom: 40px;
     text-align: center;
 }
 
-.locationDropDown{
+.serviceDropDown{
     width:250px;
     height:60px;
     border-radius: 0%;
@@ -47,7 +47,7 @@ body{
 
 .typesDropDown{
     border: none;
-    width:370px;
+    width:320px;
     height:60px;
     border-radius:0%;
     font-size: 20px;
