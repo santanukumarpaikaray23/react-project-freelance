@@ -29,7 +29,7 @@ class Search extends Component {
                 return data.map((item)=>{
                     return(
                         <option value={item._id}>
-                            {item.name}|{item.about}
+                            {item.name} | {item.about}
                         </option>
                     )
                 })
