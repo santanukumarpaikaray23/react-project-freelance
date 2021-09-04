@@ -7,11 +7,19 @@ const QuickDisplay = (props)=>{
         if(tripdata){
             return tripdata.map((item)=>{
                 return(
-                    <Link to="/">
+                    <Link to={`/list/${item._id}`}>
                         <div className="tileContainer">
                             <div className="tileComponent1">
                            <img src={item.image}/>
                             </div>
+                            <div className="tileComponent2">
+                                <div className="componentHeading">
+                                    {item.name}
+                                    </div>
+                                    <div className="componentSubHeading">
+                                       Make your {item.name} by us.
+                                    </div>
+                                </div>
                         </div>
                     </Link>
                 )
@@ -21,13 +29,13 @@ const QuickDisplay = (props)=>{
     return(
         <div className="quickSearchContainer">
             <p className="quickSearchHeading">
-                QuickSearch
+             Also Search here
 
             </p>
-               <p className="quickSearchSubHeading">
+               {/* <p className="quickSearchSubHeading">
                    You can also Search here
 
-               </p>
+               </p> */}
                <br/>
                {listTrip(props)}
             </div>

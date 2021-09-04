@@ -13,7 +13,7 @@ class QuickSearch extends Component {
     }
     render(){
         return(
-            <QuickDisplay tripType={this.state.tripType}/>
+            <QuickDisplay tripdata={this.state.tripType}/>
         )
     }
     componentDidMount(){

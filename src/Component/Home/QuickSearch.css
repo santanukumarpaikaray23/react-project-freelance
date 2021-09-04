@@ -5,14 +5,14 @@
 
 .quickSearchHeading{
     text-align: left;
-    color: #192f60;
+    color: black;
     font-size:30px;
     line-height: 1.5;
     font-weight: bold;
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
-.quickSearchSubHeading{
+/* .quickSearchSubHeading{
     text-align: left;
     color: gray;
     line-height: .01;
@@ -20,7 +20,7 @@
     font-size:18px;
     font-weight: normal;
     font-family:Georgia, 'Times New Roman', Times, serif;
-}
+} */
 
 
 .tileContainer{
