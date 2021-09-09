@@ -2,14 +2,15 @@ import React, {Component} from 'react';
 import axios from 'axios';
 import ListingDisplay from './listingDisplay';
 
-const url ="http://localhost:9800/types?service"
+const url ="http://localhost:9800/types?service="
+
 
 class Listing extends Component{
     constructor(){
         super()
-
+      
         this.state={
-            types:''
+            service:''
         }
     }
     render(){
@@ -20,7 +21,7 @@ class Listing extends Component{
 
                 </div> */}
                 <div className="col-md-10">
-                  <ListingDisplay listdata={this.state.types}/>  
+                  <ListingDisplay listdata={this.state.service}/>  
                 </div>
             </div>
         )
@@ -28,7 +29,7 @@ class Listing extends Component{
     componentDidMount(){
         let tripId = this.props.match.params.id;
         axios.get(`${url}/${tripId}`)
-        .then((res)=>{this.setState({types:res.data})})
+        .then((res)=>{this.setState({service:res.data})})
 
 
     }

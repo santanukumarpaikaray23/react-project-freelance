@@ -13,8 +13,8 @@ class details extends Component{
         }
     }
     render(){
-        // let details=this.state.details;
-        let {details} = this.state
+        let details=this.state.details;
+        // let {details} = this.state
         return(
             <div className="container">
                 <div className="panel panel-primary">
