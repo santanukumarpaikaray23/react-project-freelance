@@ -1,11 +1,12 @@
 import React, {Component} from 'react';
+import { withRouter } from 'react-router';
 import './Search.css';
 const serviceUrl="http://localhost:9800/service";
 const typeUrl="http://localhost:9800/types?service=";
 
 class Search extends Component {
-    constructor(){
-        super()
+    constructor(props){
+        super(props)
         console.log(">>>in constructor")
         this.state={
             service:'',
@@ -24,12 +25,12 @@ class Search extends Component {
         }
 
         }
-        rendertype = (data)=>{
+        rendertypes = (data)=>{
             if(data){
                 return data.map((item)=>{
                     return(
                         <option value={item._id}>
-                            {item.name} | {item.about}
+                            {item.name} 
                         </option>
                     )
                 })
@@ -45,8 +46,12 @@ class Search extends Component {
           this.setState({types:data})
       })
   }
+  handletypes=(event) => {
+      this.props.history.push(`/details/${event.target.value}`)
+  }
     render(){
-        console.log(">>>>>in render>>>>>",this.state.types)
+        console.log(">>>>in search",this.props)
+        // console.log(">>>>>in render>>>>>",this.state.types)
         return(
             <div className="imageContainer">
                 <div id="logo"> 
@@ -64,9 +69,9 @@ class Search extends Component {
                         <option>--SELECT SERVICES--</option>
                         {this.renderservice(this.state.services)}
                     </select>
-                    <select className="typesDropDown">
+                    <select className="typesDropDown" onChange={this.handletypes}>
                         <option>-----SELECT TYPES-----</option>
-                        {this.rendertype(this.state.types)}
+                        {this.rendertypes(this.state.types)}
 
                     </select>
                     </div>
@@ -93,4 +98,4 @@ class Search extends Component {
 
     }
 }
-export default Search;
+export default withRouter(Search);

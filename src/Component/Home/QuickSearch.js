@@ -8,19 +8,19 @@ class QuickSearch extends Component {
         super()
         
         this.state={
-            tripType:''
+            booking:''
         }
     }
     render(){
         return(
-            <QuickDisplay tripdata={this.state.tripType}/>
+            <QuickDisplay tripdata={this.state.booking}/>
         )
     }
     componentDidMount(){
         fetch(url,{method:'GET'})
         .then((res)=>res.json())
         .then((data)=>{
-            this.setState({tripType:data})
+            this.setState({booking:data})
         })
     }
 }
