@@ -8,10 +8,10 @@ const BookingDisplay = (props)=>{
 
     return(
         <div className="container">
-            <center><h2>Hi, We got your Order.Our Team will reach out you as soon as possible.</h2></center>
+            <center><h2>Hi👋, We got your Order.Our Team will reach out you as soon as possible.</h2></center>
             
             <table className="table table-responsive">
-              
+             <center> <h3>You will get Your OrderId from mail</h3></center>
                 <tbody>
                     {renderTable(props)}
                 </tbody>

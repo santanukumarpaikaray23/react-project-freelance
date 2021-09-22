@@ -37,7 +37,7 @@ class PlaceOrder extends Component{
             <div className="container">
                 <div className="panel panel-primary">
                     <div className="panel-heading">
-                      <h3>  Place Booking </h3>
+                      <h3> Place Booking </h3>
                     </div>
                     {/* <div className="form-group">
                         <label>Order Id</label>

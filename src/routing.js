@@ -7,6 +7,9 @@ import ListingApi from './Component/listing/listingApi';
 import DetailComponent from './Component/details/details';
  import PlaceBooking from './Component/booking/placeBooking';
  import BookingComponent from './Component/booking/bookingApi';
+ import Post from './Component/Post/Post';
+ import Profile from './Component/Profile/Profile';
+
 
 
 
@@ -15,10 +18,16 @@ const Routing = () => {
         <BrowserRouter>
         <Header/>
         <Route exact path="/" component={Home}/>
+        <Route exact path="/Post" component={Post}/>
+        <Route exact path="/Profile" component={Profile}/>
+    
         <Route path="/list/:id" component={ListingApi}/>
         <Route path="/details/:id" component={DetailComponent}/>
         <Route path="/booking/:service_name" component={PlaceBooking}/>
         <Route path="/viewBooking" component={BookingComponent}/>
+        
+      
+   
        
         <Footer/>
         </BrowserRouter>
