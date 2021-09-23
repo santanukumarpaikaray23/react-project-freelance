@@ -6,8 +6,8 @@ const url ="http://localhost:9800/servicedetail"
 
 
 class Listing extends Component{
-    constructor(){
-        super()
+    constructor(props){
+        super(props)
       
         this.state={
             servicedetails:''
