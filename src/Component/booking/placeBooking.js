@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-//  const url="localhost:9800/addplaceBooking";
+
 
 class PlaceOrder extends Component{
     constructor(props){
@@ -33,7 +33,11 @@ class PlaceOrder extends Component{
         .then(this.props.history.push('/viewBooking'))
     }
     render(){
+        const {name,phone,mail,message}=this.state;
+            const isEnabled = name.length > 0 && phone.length > 0 && mail.length >0 && message.length > 0;
+
         return(
+            
             <div className="container">
                 <div className="panel panel-primary">
                     <div className="panel-heading">
@@ -81,14 +85,18 @@ class PlaceOrder extends Component{
                         className="form-control" onChange={this.handleChange}/>
 
                     </div>
-                    <button className="btn btn-success" onClick={this.handleSubmit}>
-                        Place Booking
+                    <p>please fill all before Proceed</p>
+                    <button disabled={!isEnabled} className="btn btn-success" onClick={this.handleSubmit}>
+                        Proceed
                     </button>
 
                 </div>
             
         )
     }
-
 }
+
+
+
+
 export default PlaceOrder;
