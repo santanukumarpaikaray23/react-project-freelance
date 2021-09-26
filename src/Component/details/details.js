@@ -43,7 +43,7 @@ class details extends Component{
                         <Tabs>
                       <TabList>
                     <Tab>Details</Tab>
-                    <Tab>Contact</Tab>
+                    <Tab>Contact Us</Tab>
                    </TabList>
 
                 <TabPanel>
@@ -56,7 +56,7 @@ class details extends Component{
              <h2>Phone no:8917310896</h2>
             </TabPanel>
             </Tabs>
-            <Link to="/" className="btn btn-danger">Back</Link> &nbsp;
+            <Link to="/home" className="btn btn-danger">Back</Link> &nbsp;
             <Link to={`/booking/${details.name}`} className="btn btn-success">
                 Proceed
             </Link>

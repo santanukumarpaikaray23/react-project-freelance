@@ -1,6 +1,7 @@
 import React from 'react';
 import Search from './Search';
 import QuickSearch from './QuickSearch';
+import Logout from './Logout';
 
 
 
@@ -9,6 +10,7 @@ const Home = () => {
         <div>
             <Search/>
             <QuickSearch/>
+            <Logout/>
             
             
             

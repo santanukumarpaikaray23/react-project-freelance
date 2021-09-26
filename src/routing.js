@@ -8,18 +8,23 @@ import DetailComponent from './Component/details/details';
  import PlaceBooking from './Component/booking/placeBooking';
  import BookingComponent from './Component/booking/bookingApi';
  import Post from './Component/Post/Post';
- import Profile from './Component/Profile/Profile';
+ import LoginComponent from './Component/Login';
+ import RegisterComponent from './Component/Register';
+ import UserComponent from './Component/UserApi';
+ import LogoutComponent from './Component/Logout';
+ 
 
-
-
-
-const Routing = () => {
+ const Routing = () => {
     return(
         <BrowserRouter>
         <Header/>
-        <Route exact path="/" component={Home}/>
+         <Route exact path="/logout" component={LogoutComponent}/>
+        <Route exact path="/" component={LoginComponent}/>
+        <Route path="/register" component={RegisterComponent}/>
+        <Route path="/show" component={UserComponent}/>
+        <Route exact path="/home" component={Home}/>
         <Route exact path="/Post" component={Post}/>
-        <Route exact path="/Profile" component={Profile}/>
+        
     
         <Route path="/list/:id" component={ListingApi}/>
         <Route path="/details/:id" component={DetailComponent}/>

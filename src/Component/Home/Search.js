@@ -4,6 +4,7 @@ import './Search.css';
 const serviceUrl="http://localhost:9800/service";
 const typeUrl="http://localhost:9800/types?service=";
 
+
 class Search extends Component {
     constructor(props){
         super(props)
