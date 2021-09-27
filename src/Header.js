@@ -20,7 +20,7 @@ const Header = () =>{
     <div class="collapse navbar-collapse" id="myNavbar">
     <ul className="nav navbar-nav">
             <li><Link to="/">Home</Link></li>
-             <li><Link to="/post">Post</Link></li>
+             {/* <li><Link to="/post">Post</Link></li> */}
           
          
      

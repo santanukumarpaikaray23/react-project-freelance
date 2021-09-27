@@ -7,7 +7,7 @@ import ListingApi from './Component/listing/listingApi';
 import DetailComponent from './Component/details/details';
  import PlaceBooking from './Component/booking/placeBooking';
  import BookingComponent from './Component/booking/bookingApi';
- import Post from './Component/Post/Post';
+//  import Post from './Component/Post/Post';
  import LoginComponent from './Component/Login';
  import RegisterComponent from './Component/Register';
  import UserComponent from './Component/UserApi';
@@ -23,7 +23,7 @@ import DetailComponent from './Component/details/details';
         <Route path="/register" component={RegisterComponent}/>
         <Route path="/show" component={UserComponent}/>
         <Route exact path="/home" component={Home}/>
-        <Route exact path="/Post" component={Post}/>
+        {/* <Route exact path="/Post" component={Post}/> */}
         
     
         <Route path="/list/:id" component={ListingApi}/>
