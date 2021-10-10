@@ -25,6 +25,8 @@ class Home extends Component{
     handleLogout = () =>{
         sessionStorage.removeItem('ltk');
         this.props.history.push('/')
+
+       
     }
     render(){
         if (sessionStorage.getItem('ltk') == null ){

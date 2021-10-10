@@ -24,6 +24,7 @@ class Login extends Component{
                 'Content-Type':'application/json'
             },
             body:JSON.stringify(this.state)
+            
 
         })
         .then((res)=>res.json())
@@ -36,6 +37,7 @@ class Login extends Component{
                 
             }
         })
+       
     }
     render(){
         // const {name,phone,mail,message}=this.state;

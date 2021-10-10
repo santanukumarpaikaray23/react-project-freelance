@@ -52,8 +52,8 @@ class details extends Component{
                 </TabPanel>
                 <TabPanel>
              <h2>Nature With Code</h2>
-             <h2>Puri,Odisha,India</h2>
-             <h2>Phone no:8917310896</h2>
+             <h3>Puri,Odisha,India</h3>
+             <h4>Phone no:8917310896</h4>
             </TabPanel>
             </Tabs>
             <Link to="/home" className="btn btn-danger">Back</Link> &nbsp;

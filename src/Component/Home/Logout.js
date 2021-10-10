@@ -28,6 +28,7 @@ class Logout extends Component{
     handleLogout = ()=>{
         sessionStorage.removeItem('ltk');
         this.props.history.push('/')
+       
     }
     render(){
         if(sessionStorage.getItem('ltk')==null){
@@ -39,7 +40,7 @@ class Logout extends Component{
           return(
           
                 <div className="panel-heading">
-                    {this.conditionRender()}
+                    {this.conditionRender()} &nbsp;
                     <button className="btn btn-danger" onClick={this.handleLogout}>Logout</button>
                 </div>
           

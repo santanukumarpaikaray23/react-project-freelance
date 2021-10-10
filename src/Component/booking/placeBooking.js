@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
 
 
 
@@ -86,9 +87,10 @@ class PlaceOrder extends Component{
 
                     </div>
                     <p>please fill all before Proceed</p>
+                    <Link to="/home" className="btn btn-danger">Back</Link> &nbsp;&nbsp;&nbsp;
                     <button disabled={!isEnabled} className="btn btn-success" onClick={this.handleSubmit}>
                         Proceed
-                    </button>
+                    </button> 
 
                 </div>
             

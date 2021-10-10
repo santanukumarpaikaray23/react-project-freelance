@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter,Route } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
+// import Profile from './Component/Profile/Profile'
 import Home from './Component/Home/Home';
 import ListingApi from './Component/listing/listingApi';
 import DetailComponent from './Component/details/details';
@@ -11,18 +12,19 @@ import DetailComponent from './Component/details/details';
  import LoginComponent from './Component/Login';
  import RegisterComponent from './Component/Register';
  import UserComponent from './Component/UserApi';
- import LogoutComponent from './Component/Logout';
+//  import LogoutComponent from './Component/Logout';
  
 
  const Routing = () => {
     return(
         <BrowserRouter>
         <Header/>
-         <Route exact path="/logout" component={LogoutComponent}/>
+         {/* <Route exact path="/logout" component={LogoutComponent}/> */}
         <Route exact path="/" component={LoginComponent}/>
         <Route path="/register" component={RegisterComponent}/>
         <Route path="/show" component={UserComponent}/>
         <Route exact path="/home" component={Home}/>
+        {/* <Route exact path="/profile" component={Profile}/> */}
         {/* <Route exact path="/Post" component={Post}/> */}
         
     

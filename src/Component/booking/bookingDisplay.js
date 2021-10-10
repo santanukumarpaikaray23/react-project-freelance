@@ -14,7 +14,7 @@ const BookingDisplay = (props)=>{
              <center> <h4>You will get Your OrderId from mail</h4></center>
                
             </table>
-            <Link to="/home" className="btn btn-danger">Back to Home</Link>
+            {/* <Link to="/home" className="btn btn-danger">Back to Home</Link> */}
         </div>
     )
     

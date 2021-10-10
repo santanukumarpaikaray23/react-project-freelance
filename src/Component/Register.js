@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 
+
 const url="http://localhost:5000/api/auth/register";
 
 class Register extends Component{
@@ -15,10 +16,12 @@ class Register extends Component{
         
         }
     }
+
     handleChange = (event)=>{
         this.setState({[event.target.name]:event.target.value})
     }
     handleSubmit = () =>{
+       
       
         fetch(url,{
             method:'POST',
@@ -30,6 +33,11 @@ class Register extends Component{
 
         })
         .then(  this.props.history.push('/'))
+
+        alert("Registered Successfull")
+        
+        
+        
      
     }
     render(){
@@ -86,9 +94,12 @@ class Register extends Component{
                     </button>
 
                 </div>
+               
                 </div>
+                
             
         )
+        
     }
 }
 
