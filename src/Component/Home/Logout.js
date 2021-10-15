@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 import { withRouter } from 'react-router';
 import {Link} from 'react-router-dom';
 
-const url = "http://localhost:5000/api/auth/userinfo";
+const url = "https://naturewithcodeauth.herokuapp.com/api/auth/userinfo";
 
 class Logout extends Component{
    

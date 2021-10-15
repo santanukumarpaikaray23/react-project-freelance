@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 import axios from 'axios';
 import BookingDisplay from './bookingDisplay';
 
-const url = "localhost:9800/placeBooking"
+const url = "https://naturewithcode.herokuapp.com/placeBooking"
 
 class viewBooking extends Component{
     constructor(){

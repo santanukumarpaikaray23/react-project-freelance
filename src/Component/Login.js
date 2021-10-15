@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-const url="http://localhost:5000/api/auth/login";
+const url="https://naturewithcodeauth.herokuapp.com/api/auth/login";
 
 class Login extends Component{
     constructor(props){

@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import { withRouter } from 'react-router';
 import './Search.css';
-const serviceUrl="http://localhost:9800/service";
-const typeUrl="http://localhost:9800/types?service=";
+const serviceUrl="https://naturewithcode.herokuapp.com/service";
+const typeUrl="https://naturewithcode.herokuapp.com/types?service=";
 
 
 class Search extends Component {

@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import UserDisplay from './UserDisplay';
 
-const url = "http://localhost:5000/api/auth/users";
+const url = "https://naturewithcodeauth.herokuapp.com/api/auth/users";
 
 class UserList extends Component{
     constructor(){

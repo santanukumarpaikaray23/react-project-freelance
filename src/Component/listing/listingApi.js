@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import axios from 'axios';
 import ListingDisplay from './listingDisplay';
 
-const url ="http://localhost:9800/servicedetail"
+const url ="http://naturewithcode.herokuapp.com/servicedetail"
 
 
 class Listing extends Component{

@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 
 
 
-const url ="http://localhost:5000/api/auth/userinfo";
+const url ="https://naturewithcodeauth.herokuapp.com/api/auth/userinfo";
 
 class Home extends Component{
     constructor(){

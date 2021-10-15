@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import QuickDisplay from './QuickDisplay';
 
-const url = "http://localhost:9800/booking";
+const url = "https://naturewithcode.herokuapp.com/booking";
 
 class QuickSearch extends Component {
     constructor(){

@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 
-const url ="http://localhost:9800/servicedetails";
+const url ="https://naturewithcode.herokuapp.com/servicedetails";
 
 class details extends Component{
     constructor(){
