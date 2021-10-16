@@ -6,8 +6,11 @@
     background-size: cover;
 
 }
+
+
 body{
     margin: auto;
+    
 }
 #logo{
     text-align:right;
@@ -52,4 +55,7 @@ body{
     border-radius:0%;
     font-size: 20px;
     margin-left:10px
+}
+@media (orientation:landscape) and (min-width:500px){
+
 }

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 
-
+const url = "https://naturewithcode.herokuapp.com/placeBooking"
 
 class PlaceOrder extends Component{
     constructor(props){
