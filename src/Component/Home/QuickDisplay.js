@@ -2,7 +2,6 @@ import React from 'react';
 import './QuickSearch.css';
 import {Link} from 'react-router-dom';
 
-const url ="https://naturewithcodeauth.herokuapp.com/api/auth/userinfo";
 
 const QuickDisplay = (props)=>{
     const listTrip =({tripdata}) => {
