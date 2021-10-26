@@ -21,11 +21,11 @@ class PlaceOrder extends Component{
         this.setState({[event.target.name]:event.target.value})
     }
     handleSubmit = () =>{
-        // console.log(this.state);
-        fetch('/addplaceBooking',{
+        console.log(this.state);
+        fetch('/addPlaceBooking',{
             method:'POST',
             headers:{
-                // 'Accept':'application/json',
+                'Accept':'application/json',
                 'Content-Type':'application/json'
             },
             body:JSON.stringify(this.state)
@@ -49,7 +49,6 @@ class PlaceOrder extends Component{
                         <input name="id" value={this.state.id}
                         className="form-control" readOnly/> */}
 
-                    </div>
                     <div className="form-group">
                         <label>Service Name</label>
                         <input name="service_name" value={this.state.service_name}
@@ -92,6 +91,8 @@ class PlaceOrder extends Component{
                         Proceed
                     </button> 
 
+                </div>
+                
                 </div>
             
         )
