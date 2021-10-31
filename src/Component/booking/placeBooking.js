@@ -22,7 +22,7 @@ class PlaceOrder extends Component{
     }
     handleSubmit = () =>{
         console.log(this.state);
-        fetch('/addPlaceBooking',{
+        fetch('https://naturewithcode.herokuapp.com/addPlaceBooking',{
             method:'POST',
             headers:{
                 'Accept':'application/json',
