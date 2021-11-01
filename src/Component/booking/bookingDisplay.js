@@ -8,7 +8,8 @@ const BookingDisplay = (props)=>{
     return(
         <div className="container">
             <center><h2>Hi There👋</h2>
-           <h3>Your Order Booked Successfully.Our Team will reach out you as soon as possible.</h3></center>
+           <h3>Your Order Booked Successfully.Our Team will reach out you as soon as 
+               possible.</h3></center>
             
             <table className="table table-responsive">
              <center> <h4>You will get Your OrderId from Your mail</h4></center>

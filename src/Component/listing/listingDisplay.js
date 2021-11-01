@@ -17,19 +17,19 @@ const ListingDisplay = (props) =>{
                                 <div className="col-md-7">
                                     <div className="service_name">
                                         <Link to={`/details/${item._id}`}>{item.name}</Link>
-                                        <div className="service_name">{item.service_name}</div>
+                                        {/* <div className="service_name">{item.service_name}</div> */}
                                      
                                     </div>
                                 </div>
                             </div>
                             <hr/>
                             <div className="row">
-                                <div className="col-sm-3">
+                                {/* <div className="col-sm-3">
                                     <div className="cuision">Cost per this</div>
-                                    </div>
-                                    <div className="cuision_data">
+                                    </div> */}
+                                     <div className="cuision_data">
                                        Rs. {item.cost} (With Maintenance)
-                                        </div>
+                                        </div> 
 
                             </div>
                         </div>
