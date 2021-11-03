@@ -1,7 +1,8 @@
 import React from 'react';
 import { BrowserRouter,Route } from 'react-router-dom';
-import Header from './Header';
+import Navbar from './Navbar';
 import Footer from './Footer';
+import './routing.css';
 // import Profile from './Component/Profile/Profile'
 import Home from './Component/Home/Home';
 import ListingApi from './Component/listing/listingApi';
@@ -18,7 +19,7 @@ import DetailComponent from './Component/details/details';
  const Routing = () => {
     return(
         <BrowserRouter>
-        <Header/>
+        <Navbar/>
          {/* <Route exact path="/logout" component={LogoutComponent}/> */}
         <Route exact path="/" component={LoginComponent}/>
         <Route path="/register" component={RegisterComponent}/>

@@ -85,7 +85,7 @@ class PlaceOrder extends Component{
                         className="form-control" onChange={this.handleChange}/>
 
                     </div>
-                    <p>please fill all before Proceed</p>
+                   
                     <Link to="/home" className="btn btn-danger">Back</Link> &nbsp;&nbsp;&nbsp;
                     <button disabled={!isEnabled} className="btn btn-success" onClick={this.handleSubmit}>
                         Proceed
